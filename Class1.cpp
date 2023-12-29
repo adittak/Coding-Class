@@ -54,6 +54,6 @@ int main()
     {
         cout<< *it2 << "\t";
     }
-
+/////
     return 0;
 }
