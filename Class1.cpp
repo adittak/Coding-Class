@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool rev(int a, int b)
+bool rev(int a, int b)  // make a reverse function if I do not use the reverse command
 {
     return a > b;
 }
@@ -16,8 +16,8 @@ int main()
     vec.push_back(6);
     vec.pop_back();
 
-    // sort(vec.begin(), vec.end(), rev);
-    // reverse(vec.begin(), vec.end());
+    sort(vec.begin(), vec.end(), rev);     // sorting in assending order
+    reverse(vec.begin(), vec.end());       // in order to reverse make sure to sort the arry first
 
     it = find(vec.begin(), vec.end(), 8);
     cout << *it <<endl;
@@ -44,8 +44,8 @@ int main()
     lis.push_back(6);
     list<int>::iterator it2;
 
-    lis.push_front(10);
-    lis.pop_front();
+    lis.push_front(10);          //in list we can add something both in back or front
+    lis.pop_front();               // we can pop out too
     lis.pop_front();
 
     cout<<"List: "<<endl;
@@ -54,6 +54,6 @@ int main()
     {
         cout<< *it2 << "\t";
     }
-/////
+
     return 0;
 }
