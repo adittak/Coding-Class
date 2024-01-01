@@ -6,7 +6,7 @@ int main()
     map<string, int> mp;
     map<string, int>::iterator it;
 
-    mp["t"]=3;
+    mp["t"]=3;                    // another way to insert value in map veriable 
 
     multimap<string, int> multimp;      //use the multimap so that they can count everything and do not ingore the same input
     multimap<string, int>::iterator it2;
@@ -43,7 +43,7 @@ int main()
     vec2.push_back("test");
     vec2.push_back("hello");
 
-    for(string x:vec2)
+    for(string x:vec2)        //same for string or any data types
     {
         cout << x << " ";
     }
@@ -59,24 +59,28 @@ int main()
 
     for(int x:st)
     {
-        //cout << x << " ";
+        //cout << x << " ";        //here the output would be 1 2 3. Using multiset it can include the extra 2 meaning 1 2 2 3
     }
 
     string s = "C plus plus"; //distinct
     map<char, int> countingMap;
     map<char, int>::iterator it3;
 
-    for(int i=0;i<s.length();i++)
+    for(int i=0;i<s.length();i++)        //counting the letter frequences
     {
         countingMap[s[i]]++;
+        //countingMap[s[i]] +=1;        //same as the previous line
+
     }
 
-    for(it3=countingMap.begin();it3!=countingMap.end();it3++)
+    for(it3=countingMap.begin();it3!=countingMap.end();it3++)        
     {
         //cout << it3->first << " " << it3->second << endl;
     }
 
-    stack<int> stack1;
+
+    
+    stack<int> stack1;            //stack stores the valus on top of eacg other as vertical. First comes and last out
 
     stack1.push(3);
     stack1.push(4);
@@ -91,10 +95,12 @@ int main()
     {
         int x = stack1.top();
         //cout << x << endl;
-        stack1.pop();
+        stack1.pop();            //use the pop() is necessary otherwise it will be infinate loop
     }
 
-    queue<int> q;
+
+    
+    queue<int> q;        //it is opposite of stack. It first comes and first out. It stoes the values horizontally unlike stack
 
     q.push(5);
     q.push(8);
@@ -107,7 +113,7 @@ int main()
         q.pop();
     }
 
-    priority_queue<int> q2;
+    priority_queue<int> q2;        //it gives the output in sorting and in decending order 
     q2.push(5);
     q2.push(10);
     q2.push(2);
