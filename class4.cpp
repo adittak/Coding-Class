@@ -14,7 +14,7 @@ int main()
 
     sort(vec.begin(), vec.end());
 
-    // binary search returns either true or false
+    // binary search returns either true or false                    //also when we do the find() funtion, underneath it searches for element like binary search
     bool element = binary_search(vec.begin(), vec.end(), 10); // true
     element = binary_search(vec.begin(), vec.end(), 20); //false
 
