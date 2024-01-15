@@ -24,7 +24,7 @@ int main()
 
     int* ptr = new int(10); // run time -> heap     //using new would save the memery in heap 
    // cout << *ptr << endl;
-    string* p = new string("hi");
+    string* p = new string("hi");        //it order to use new, it requires pointers
     //cout << *p;
 
     //Test t(5); // compile time
