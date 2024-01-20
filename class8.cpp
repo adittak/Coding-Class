@@ -3,7 +3,7 @@ using namespace std;
 
 class Test
 {
-    int n;
+    int n; 
 public:
     Test(int val)
     {
