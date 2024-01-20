@@ -22,7 +22,7 @@ int main()
     arr[1]=5;
     arr[2]=6;
 
-    int* ptr = new int(10); // run time -> heap     //using new would save the memery in heap 
+    int* ptr = new int(10); // run time -> heap     //using new would save the memory in heap 
    // cout << *ptr << endl;
     string* p = new string("hi");        //it order to use new, it requires pointers
     //cout << *p;
