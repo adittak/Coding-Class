@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class DoublyNode
+class DoublyNode 
 {
 public:
     int value;
